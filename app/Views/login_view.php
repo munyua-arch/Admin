@@ -35,6 +35,9 @@ $page_session = \CodeIgniter\Config\Services::session();
                             <p class="text-muted">
                                 <a href="<?= base_url(); ?>/forgot-password" class="link-primary link-underline-opacity-0">Forgot Password?</a>
                             </p>
+                            <p class="text-muted">
+                                <a href="<?= base_url(); ?>/register" class="link-primary link-underline-opacity-0">Create a new admin</a>
+                            </p>
                         </div>  
                     </div>
 

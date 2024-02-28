@@ -18,6 +18,9 @@ $routes->post('/login-form', 'Home::loginForm');
 //forgot password
 $routes->get('/forgot-password', 'Home::forgotPassword');
 $routes->post('/forgot-password', 'Home::forgotPassword');
+// password reset url
+$routes->get('/reset-password/(:any)', 'Home::resetPassword/$1');
+$routes->post('/reset-password/(:any)', 'Home::resetPassword/$1');
 
 
 //ADMIN FILTER TO PREVENT  ACCESS TO NON ADMINS
@@ -59,6 +62,9 @@ $routes->group('', ['filter' => 'isAdmin'], function($routes){
 
     $routes->get('dashboard/support', 'Dashboard::support');
 
+    // admin profile
+    $routes->get('dashboard/profile', 'Dashboard::profile');
+    $routes->post('dashboard/profile', 'Dashboard::profile');
 
     //logout url
     $routes->get('dashboard/logout', 'Dashboard::logout');

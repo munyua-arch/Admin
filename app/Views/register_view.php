@@ -66,7 +66,7 @@ $page_session = \CodeIgniter\Config\Services::session();
                         <div class="col">
                             <p class="text-muted">
                                 Have an account?
-                                <a href="<?= base_url(); ?>\login" class="link-primary link-underline-opacity-0">Login</a>
+                                <a href="<?= base_url(); ?>\login-form" class="link-primary link-underline-opacity-0">Login</a>
                             </p>
                         </div>  
                     </div>

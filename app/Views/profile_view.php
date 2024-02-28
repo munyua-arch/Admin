@@ -30,8 +30,8 @@
 										><i class="fa fa-pencil"></i
 									></a>
 									<img
-										src="<?= $userdata['profile']?>"
-										alt=""
+										src=""
+										alt="admin"
 										class="avatar-photo"
 									/>
 									<div
@@ -51,7 +51,7 @@
 													<div class="img-container">
 														<img
 															id="image"
-															src="<?= $userdata['profile']?>"
+															src=""
 															alt="Picture"
 															style="height: 100; width: 100;"
 														/>
@@ -90,18 +90,10 @@
 											<span>Phone Number:</span>
 											<?= ucfirst($userdata['phone']); ?>
 										</li>
-										<li>
-											<span>Location:</span>
-											<?= ucfirst($userdata['location']); ?>
-										</li>
-										<li>
-											<span>Date of birth:</span>
-											<?= date("l d M Y", strtotime($userdata['dob'])) ?>
-										</li>
 									</ul>
 								</div>
 								<div>
-									<a href="<?= base_url().'dashboard/edit'?>" class="btn btn-primary" role="button" style="width: 100%;">Edit Profile info</a>
+									<a href="<?= base_url().'dashboard/edit-admin'?>" class="btn btn-primary" role="button" style="width: 100%;">Edit Profile info</a>
 								</div>
 							</div>
 						</div>

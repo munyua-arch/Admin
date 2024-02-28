@@ -53,7 +53,7 @@ if (isset($userdata) && !empty($userdata)) {
 								><i class="dw dw-user1"></i> Profile</a
 							>
 							
-							<a class="dropdown-item" href="<?= base_url().'dashboard/faq'?>"
+							<a class="dropdown-item" href="<?= base_url().'dashboard/support'?>"
 								><i class="dw dw-help"></i> Help</a
 							>
 							<a class="dropdown-item" href="<?= base_url().'dashboard/logout';?>"

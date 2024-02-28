@@ -295,6 +295,14 @@ class Dashboard extends BaseController
     {
         return view('support_view');
     }
+
+    public function profile()
+    {   
+        $data = null;
+        $data['userdata'] = $this->adminModel->getLoggedUserData(session()->get('logged_user'));
+
+        return view('profile_view', $data);
+    }
     
     public function logout()
     {
