@@ -19,9 +19,8 @@ $routes->post('/login-form', 'Home::loginForm');
 $routes->get('/forgot-password', 'Home::forgotPassword');
 $routes->post('/forgot-password', 'Home::forgotPassword');
 // password reset url
-$routes->get('/reset-password/(:any)', 'Home::resetPassword/$1');
-$routes->post('/reset-password/(:any)', 'Home::resetPassword/$1');
-
+$routes->get('/reset-password/{:any}', 'Home::resetPassword/$1');
+$routes->post('/reset-password/{:any}', 'Home::resetPassword/$1');
 
 //ADMIN FILTER TO PREVENT  ACCESS TO NON ADMINS
 
